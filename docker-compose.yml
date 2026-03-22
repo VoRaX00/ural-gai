@@ -1,0 +1,11 @@
+services:
+  gai:
+    image: kerzhakovn/ural-gai-service
+    platform: linux/amd64
+    environment:
+      SERVER_PORT: 10907
+      WANTED_GOOD_VINS: WWWWWW
+      ACCIDENT_GOOD_VINS: WWWWWW
+      INSPECTION_GOOD_VINS: WWWWWW
+    ports:
+      - 10907:10907
